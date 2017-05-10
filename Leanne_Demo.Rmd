@@ -3,7 +3,7 @@ title: "Bookdown Class Demo"
 author: "Leanne Fortney"
 date: "March 19, 2017"
 site: bookdown::bookdown_site
-output: /docs
+output: /_books
 ---
 
 #Using RStudio to create books {-}
