@@ -5,9 +5,9 @@ config:
   toc:
   collapse: subsection
 before: |
-  <li><a href="./">A Minimal Bookdown Book</a></li>
+  <li><a href="./">Leanne's Bookdown Demok</a></li>
   after: |
-  <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+  <li><a href="https://github.com/leanne3661/Bookdown-Demo target="blank">Published with bookdown</a></li>
   bookdown::pdf_book:
   includes:
   in_header: preamble.tex
