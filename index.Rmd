@@ -1,0 +1,10 @@
+---
+title: "Bookdown Class Demo"
+author: "Leanne Fortney"
+date: "March 19, 2017"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+---
+
+#Using RStudio to create books {-}
+###*using epub_book, gitbook, pdf_book* {-}

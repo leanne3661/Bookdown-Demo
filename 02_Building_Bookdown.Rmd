@@ -1,0 +1,41 @@
+# Building Bookdown
+
+##Creating a book is easy. {-}
+
+```
+Create a new project: 
+    New Project 
+    Empty Project 
+    Directory Name 
+    Choose your location 
+    Hit Create Project 
+    
+New Markdown (First) file:
+     New File
+     R Markdown
+     Give it a title and author  
+     Hit OK
+     
+Save as index.Rmd
+     Update the output bookdown::gitbook 
+     Add site bookdown:bookdown_site
+```
+  
+Every additional, new, Rmd file will become a new chapter. Each R Markdown file must start immediately with the chapter title using the first-level heading, e.g., # Chapter Title. Each chapter will then be saved and placed in order as completed, unless you tell it 
+otherwise. Its best to save as 01_, 02_, 03_ etc. 
+
+For bookdown to determine that the file is a new chapter the chapter title should start with the # each sub-level title will increase the number of #.
+
+## Headers
+
+As I just mentioned, section headers can be written after a number of pound signs.
+
+```
+# First-level header, such as Chapter Headers
+## Second-level header
+### Third-level header
+```
+It's important to note that, if you do not want a certain heading to be numbered, such as your index page, you can add {-} after the heading.
+```
+# Index {-}
+```

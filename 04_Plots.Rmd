@@ -1,0 +1,21 @@
+# R Coding
+
+All standard R coding can be used in Bookdown to include plots, mathematic equations, and even Shiny Apps.
+
+Reviewing your pages. I must say, you can be obsessed with this. I hate, hate, hate bad pagination. If you want to review the page you are currently working on, use the knit command. If you want to see the entirety of your book, use the build book feature. 
+
+## Mathematic equations
+
+These are tedious along, let along in a coding environment. Instead of having line after line of forward slashes, you can use the Addins feature on the top of the ribbon next to Workspace Preview. Once selected, choose the Input LeTex Math, and type away.
+
+This was generated as I typed ``m^{2+3}\ +\ m^{4+2\ }=\ m^x``
+and it gets even more complicated such as:
+$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$
+
+## Plots
+
+You can also embed plots and with a lable you can also reference to them. For a text reference is ``(ref:label)`` text, where label is a unique label throughout the document for text. It must be in a separate paragraph with empty lines above and below it.^[Xie, Yihui, 2016] 
+
+```{r}
+plot(pressure)
+```

@@ -1,0 +1,2 @@
+#References
+Xie, Yihui. 2016a. Bookdown: Authoring Books and Technical Documents with R Markdown. https://github.com/rstudio/bookdown.

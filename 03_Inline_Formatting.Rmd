@@ -1,0 +1,27 @@
+# Inline Formatting
+
+Inline formatting will provide your book with aesthetics and allow for a more enriched content. 
+
+*Italic* text by surrounding it with underscores or asterisks, for example, ``_text_``or``*text*``
+
+
+__bold__ text by using two underscores ``__text__``or two asterisks ``**text**`` 
+
+
+~subscript~ are surrounded text with ``~`` such as ``H~2~SO~4~`` (H~2~SO~4~)
+
+
+^superscript^ includw two carets (^) surrounding the text, such as``ClO^-1^`` (ClO^-1^).
+
+
+`Inline code` can be created by using a pair of backticks, for example,`` `code` ``
+
+
+<span style="font-variant:small-caps;">Small Caps</span> can be made by the HTML tag such as``<span style="font-variant:small-caps;">Small Caps</span>`` (<span style="font-variant:small-caps;">Small Caps</span>) 
+
+
+Links are created using ``[text](link)``, for example ``[RStudio](https://www.rstudio.com)`` ([RStudio](https://www.rstudio.com))
+
+Syntax for images is similar: just add an exclamation mark, for example ``![alt text or image title](path/to/image)`` 
+
+Footnotes are put inside the square brackets after a caret`` ^[] ``, for example, ``^[These were taken from Bookdown.org]``^[These were taken from Bookdown.org]

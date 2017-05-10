@@ -1,0 +1,10 @@
+# Why Bookdown
+##*Why Not?!*
+
+Publishing a book can be overwhelming and daunting. There are multiple of reasons why you should use Bookdown versus other programs such as LaTeX or Word. Some of the problems that Yihui Xie mentioned on his site, [Bookdown](https://bookdown.org/yihui/bookdown) include: that current programs are too difficult to use to write books as they should be easier to format, write, and compile; using Bookdown is cheaper for people to buy; not enough contributors; having to wait a long time before next edition; and the content is not dynamic enriched.
+
+You will need to install R package bookdown:
+# stable version on CRAN
+install.packages("bookdown")
+# or development version on GitHub
+# devtools::install_github('rstudio/bookdown')
