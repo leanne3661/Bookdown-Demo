@@ -1,6 +1,0 @@
-book_filename: "Leanne_Demo"
-chapter_name: "Chapter "
-repo: https://github.com/leanne3661/Bookdown-Demo
-output_dir: docs
-rmd_files: ["index.Rmd", "01_Why_Bookdown.Rmd", "02_Building_Bookdown.Rmd", "03_Inline_Formatting.Rmd", "04_Plots.Rmd", "05_References.Rmd"]
-new_session: yes
