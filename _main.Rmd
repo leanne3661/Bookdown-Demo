@@ -48,8 +48,109 @@ site: bookdown::bookdown_site
 output: bookdown::gitbook
 ---
 
-#Using RStudio to create books {-}
-###*using epub_book, gitbook, pdf_book* {-}
+# Why Bookdown
+##*Why Not?!*
+
+Publishing a book can be overwhelming and daunting. There are multiple of reasons why you should use Bookdown versus other programs such as LaTeX or Word. Some of the problems that Yihui Xie mentioned on his site, [Bookdown](https://bookdown.org/yihui/bookdown) include: that current programs are too difficult to use to write books as they should be easier to format, write, and compile; using Bookdown is cheaper for people to buy; not enough contributors; having to wait a long time before next edition; and the content is not dynamic enriched.
+
+You will need to install R package bookdown:
+# stable version on CRAN
+install.packages("bookdown")
+# or development version on GitHub
+# devtools::install_github('rstudio/bookdown')
+
+# Building Bookdown
+
+##Creating a book is easy. {-}
+
+```
+Create a new project: 
+    New Project 
+    Empty Project 
+    Directory Name 
+    Choose your location 
+    Hit Create Project 
+    
+New Markdown (First) file:
+     New File
+     R Markdown
+     Give it a title and author  
+     Hit OK
+     
+Save as index.Rmd
+     Update the output bookdown::gitbook 
+     Add site bookdown:bookdown_site
+```
+  
+Every additional, new, Rmd file will become a new chapter. Each R Markdown file must start immediately with the chapter title using the first-level heading, e.g., # Chapter Title. Each chapter will then be saved and placed in order as completed, unless you tell it 
+otherwise. Its best to save as 01_, 02_, 03_ etc. 
+
+For bookdown to determine that the file is a new chapter the chapter title should start with the # each sub-level title will increase the number of #.
+
+## Headers
+
+As I just mentioned, section headers can be written after a number of pound signs.
+
+```
+# First-level header, such as Chapter Headers
+## Second-level header
+### Third-level header
+```
+It's important to note that, if you do not want a certain heading to be numbered, such as your index page, you can add {-} after the heading.
+```
+# Index {-}
+```
+# Inline Formatting
+
+Inline formatting will provide your book with aesthetics and allow for a more enriched content. 
+
+*Italic* text by surrounding it with underscores or asterisks, for example, ``_text_``or``*text*``
+
+
+__bold__ text by using two underscores ``__text__``or two asterisks ``**text**`` 
+
+
+~subscript~ are surrounded text with ``~`` such as ``H~2~SO~4~`` (H~2~SO~4~)
+
+
+^superscript^ includw two carets (^) surrounding the text, such as``ClO^-1^`` (ClO^-1^).
+
+
+`Inline code` can be created by using a pair of backticks, for example,`` `code` ``
+
+
+<span style="font-variant:small-caps;">Small Caps</span> can be made by the HTML tag such as``<span style="font-variant:small-caps;">Small Caps</span>`` (<span style="font-variant:small-caps;">Small Caps</span>) 
+
+
+Links are created using ``[text](link)``, for example ``[RStudio](https://www.rstudio.com)`` ([RStudio](https://www.rstudio.com))
+
+Syntax for images is similar: just add an exclamation mark, for example ``![alt text or image title](path/to/image)`` 
+
+Footnotes are put inside the square brackets after a caret`` ^[] ``, for example, ``^[These were taken from Bookdown.org]``^[These were taken from Bookdown.org]
+
+# R Coding
+
+All standard R coding can be used in Bookdown to include plots, mathematic equations, and even Shiny Apps.
+
+Reviewing your pages. I must say, you can be obsessed with this. I hate, hate, hate bad pagination. If you want to review the page you are currently working on, use the knit command. If you want to see the entirety of your book, use the build book feature. 
+
+## Mathematic equations
+
+These are tedious along, let along in a coding environment. Instead of having line after line of forward slashes, you can use the Addins feature on the top of the ribbon next to Workspace Preview. Once selected, choose the Input LeTex Math, and type away.
+
+This was generated as I typed ``m^{2+3}\ +\ m^{4+2\ }=\ m^x``
+and it gets even more complicated such as:
+$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$
+
+## Plots
+
+You can also embed plots and with a lable you can also reference to them. For a text reference is ``(ref:label)`` text, where label is a unique label throughout the document for text. It must be in a separate paragraph with empty lines above and below it.^[Xie, Yihui, 2016] 
+
+```{r}
+plot(pressure)
+```
+#References
+Xie, Yihui. 2016a. Bookdown: Authoring Books and Technical Documents with R Markdown. https://github.com/rstudio/bookdown.
 
 <!--chapter:end:Leanne_Demo.Rmd-->
 
