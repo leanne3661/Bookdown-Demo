@@ -3,10 +3,6 @@ title: "Bookdown Class Demo"
 author: "Leanne Fortney"
 date: "March 19, 2017"
 site: bookdown::bookdown_site
-documentclass: book
-bibliography: [book.bib]
-biblio-style: apalike
-link-citations: yes
 github-repo: leanne3661/Bookdown_Demo
 description: "Leanne's Bookdown Demo"
 ---
@@ -45,7 +41,7 @@ title: "Bookdown Class Demo"
 author: "Leanne Fortney"
 date: "March 19, 2017"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: bookdown::html
 ---
 
 # Why Bookdown
