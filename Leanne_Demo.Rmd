@@ -2,8 +2,7 @@
 title: "Bookdown Class Demo"
 author: "Leanne Fortney"
 date: "March 19, 2017"
-site: bookdown::bookdown_site
-output: bookdown::html
+output: html_document
 ---
 
 # Why Bookdown
